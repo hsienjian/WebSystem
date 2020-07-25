@@ -34,7 +34,7 @@ if(isset($_POST['username'])){
     }
     else{
         echo "UserID or Password incorrect";
-        exit();
+        exit();  
     }
     
     
