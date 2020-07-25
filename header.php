@@ -128,11 +128,12 @@ span.psw {
 }
 
 @media (max-width: 700px) {
-  .nav {   
+  .div {   
     flex-direction: column;
+    display: block;
+    float: none;
   }
 }
-
 </style>
     </head>
     <!-- Font Awesome JS -->
@@ -199,7 +200,7 @@ window.onclick = function(event) {
         
         <?php
         echo 'hello world, good night';
-        include('footer.html');
+        include('footer.php');
         ?>
     </body>
     

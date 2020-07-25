@@ -4,16 +4,17 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
+<?php
+include ('dashboard.php');
+?>
 <html>
     <head>
-        <title>nav</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome</title>
+         
     </head>
     <body>
-        <div class=""container clearfix et_menu_container">
-            
-            
-        </div>
+        <h1>sucessful</h1>
     </body>
 </html>
