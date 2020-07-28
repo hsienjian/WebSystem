@@ -47,6 +47,9 @@ and open the template in the editor.
                 margin-bottom:15px;
             }
             
+            .error{
+                color: red;
+            }
         </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,4 +67,5 @@ and open the template in the editor.
             
         </div>
     </body>
+   
 </html>
