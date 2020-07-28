@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>validate</title>
     </head>
     <body>
         <?php
@@ -26,7 +26,7 @@ and open the template in the editor.
                 
                 $rows = mysqli_num_rows($query);
                 if($rows ==1){
-                    header("Location: welcome.php"); 
+                    header("Location: dashboard.php"); 
                 }
                 else
                 {
@@ -34,7 +34,9 @@ and open the template in the editor.
                 }
                 mysqli_close($conn);
             }
+            
         }
+        
         ?>
     </body>
 </html>
