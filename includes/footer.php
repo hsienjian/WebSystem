@@ -1,5 +1,6 @@
 
-
+      
+ <link href="css/sticky-footer-navbar.css" rel="stylesheet">
     <footer class="footer mt-auto py-3">
   <div class="container">
     <div class="row">
@@ -49,31 +50,17 @@
     <div class="col-auto col-md">
       <h5>Contact Us</h5>
       <ul class="list-unstyled  list-group list-group-horizontal text-small">
-          <li><a class="text-muted" href="#"><img src="img/facebookicon.png" alt="facebookicon.png" width="30px" height="30px" ></img></a></li>
+          <li><a class="text-muted" href="https://www.facebook.com/Xx.hsienjian.xX/"><img src="img/facebookicon.png" alt="facebookicon.png" width="30px" height="30px" ></img></a></li>
           <span>&nbsp;&nbsp;</span>
-        <li><a class="text-muted" href="#"><img src="img/instaicon.png" alt="facebookicon.png" width="30px" height="30px" ></img></a></li>
+        <li><a class="text-muted" href="https://www.instagram.com/hsien_jian/"><img src="img/instaicon.png" alt="insta" width="30px" height="30px" ></img></a></li>
          <span>&nbsp;&nbsp;</span>
-        <li><a class="text-muted" href="#"><img src="img/whatsappicon.png" alt="facebookicon.png" width="30px" height="30px" ></img></a></li><br>
+        <li><a class="text-muted" href="https://wa.link/lxgct5/"><img src="img/whatsappicon.png" alt="whatapps" width="30px" height="30px" ></img></a></li><br>
         
       </ul>
     </div>
   </div>
   </div>
 </footer>
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-  </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.js"></script></body>
-</html>
     
  
