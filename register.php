@@ -1,6 +1,7 @@
 <?php
 include('server.php');
 include ('includes/header1.php');
+//include('includes/clientnav.php');
 ?>
 
 <!DOCTYPE html>
@@ -127,7 +128,6 @@ and open the template in the editor.
             
             <p>
                 Already a member? <a href="mainpage.php" action="">Sign in</a>
-                <!--discuss with jiahie ， 要link去mainpage or 直接link去 sign in form 。 如果直接link sign in , login 就要放另一个file-->
             </p>
         </form>
     </body>

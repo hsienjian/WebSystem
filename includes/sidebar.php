@@ -1,14 +1,4 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-
-<!-- Sidebar  -->
+   <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
                 <img style="width:220px;padding:5px;"src="img/myprinting.png" alt="logo">
