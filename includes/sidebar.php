@@ -27,7 +27,7 @@
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Category</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">All category</a>
+                            <a href="adminAllProduct.php">All category</a>
                         </li>
                         <li>
                             <a href="#">Add category</a>
@@ -35,10 +35,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Customer</a>
+                    <a href="adminCustomer.php">Customer</a>
                 </li>
                 <li>
-                    <a href="#">Order</a>
+                    <a href="adminOrder.php">Order</a>
                 </li>
             </ul>
         </nav>

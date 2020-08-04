@@ -15,7 +15,7 @@
                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul class="navbar-nav ml-auto ">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" >My Account</a> <!-- no more href , because it has drop down already -->
                         </li>
                            <link rel="stylesheet" href="css/style.css">
                         <li class="nav-item">
@@ -23,10 +23,10 @@
                             <i class="fas fa-user"></i><span id="space" style="padding-left: 5px;"></span><i class="fas fa-caret-down"></i>
                         </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Edit Profile</a>
-                                <a class="dropdown-item" href="#">Change Password</a>
-                                <a class="dropdown-item" href="#">Status</a>
-                                <a class="dropdown-item" href="#">Logout</a>
+                                <a class="dropdown-item" href="adminEditProfile.php">Edit Profile</a> <!-- no functioning (php) -->
+                                <a class="dropdown-item" href="adminChangePass.php">Change Password</a> <!-- no functioning (php) -->
+                                
+                                <a class="dropdown-item" href="adminLogin.php">Logout</a> <!-- no functioning (php) -->
                             </div>
                         </li>
                     </ul>

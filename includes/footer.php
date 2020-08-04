@@ -15,11 +15,11 @@
     <div class="col-5 col-lg">
       <h5>Overview</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Home</a></li>
-        <li><a class="text-muted" href="#">All Product</a></li>
-        <li><a class="text-muted" href="#">Create Design</a></li>
-        <li><a class="text-muted" href="#">Brands</a></li>
-        <li><a class="text-muted" href="#">Service</a></li>
+        <li><a class="text-muted" href="mainpage.php">Home</a></li>
+        <li><a class="text-muted" href="all_product.php">All Product</a></li>
+        <li><a class="text-muted" href="#">About Us</a></li>
+        <li><a class="text-muted" href="ContactUs.php">Contact Us</a></li>
+        <li><a class="text-muted" href="Custom.php">Service</a></li>
       </ul>
     </div>
       
@@ -41,10 +41,10 @@
     <div class="col-12 col-md">
       <h5>Service</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Create Design</a></li>
-        <li><a class="text-muted" href="#">Silkscreen Printing</a></li>
-        <li><a class="text-muted" href="#">Embroidery Services</a></li>
-        <li><a class="text-muted" href="#">Heat Transfer Printing</a></li>
+        <li><a class="text-muted" href="Custom.php">Create Design</a></li>
+        <li><a class="text-muted" href="Silkscreen.php">Silkscreen Printing</a></li>
+        <li><a class="text-muted" href="Embroidery.php">Embroidery Services</a></li>
+        <li><a class="text-muted" href="Heat-Transfer.php">Heat Transfer Printing</a></li>
       </ul>
     </div>
     <div class="col-auto col-md">

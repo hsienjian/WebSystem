@@ -30,7 +30,7 @@ and open the template in the editor.
                 }
                 else
                 {
-                    $error = "Username of Password is Invalid";
+                    $error = "Username or Password is Invalid";
                 }
                 mysqli_close($conn);
             }

@@ -20,15 +20,15 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ALL PRODUCT</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">T-SHIRTS</a>
+                <a class="dropdown-item" href="t-shirt.php">T-SHIRTS</a>
                  <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">SWEATER</a>
+                <a class="dropdown-item" href="">SWEATER</a>
                  <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">UNIFORM</a>
                  <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">SPORT-TEE</a>
                  <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">CUSTOM-TEE</a>
+                <a class="dropdown-item" href="custom-tee.php">CUSTOM-TEE</a>
             </div>
         </li>
         <li class="nav-item ">
@@ -59,7 +59,7 @@
       </form>
       <ul class="navbar-nav  mt-0 mt-sm-0">    
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"style="margin:0 5px 0 0"></i>Cart</a>
+                <a class="nav-link" href="cart.php"><i class="fas fa-shopping-cart"style="margin:0 5px 0 0"></i>Cart</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" onclick="document.getElementById('id01').style.display='block';" href="#"> <i class="fas fa-user"style="margin:0 5px 0 0" ></i>My Account</a>
@@ -68,7 +68,7 @@
       </ul>
         <div id="id01" class="modal">
   
-            <form class="modal-content animate" action="done.php" method="post">
+            <form class="modal-content animate" action="afterloginMainPage.php" method="post">
               <div class="imgcontainer">
                <img src="img/myprinting.png" alt="myprinting" class="logo" width="600px" height="130px" >
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -82,7 +82,7 @@
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button class="pop-btn" type="submit">Login</button>
+                <button class="pop-btn" value="login" type="submit">Login</button>
                 <label>
                   <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
