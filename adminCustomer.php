@@ -29,27 +29,43 @@ and open the template in the editor.
         
         <h3>List Of Customer</h3>
         <table>
-            <tr><th>Customer ID</th><th>Customer Name</th><th>Phone Number</th><th>Email</th><th>Gender</th></tr>
             
-            <?php
+            <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Gender</th>
+                            
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    
+                    <?php
             $conn = new mysqli('localhost','root','','assignment');
             $sql = "select * from customer";
             $result = $conn ->query($sql);
             while($row=$result->fetch_assoc()){
                 echo "<tr><td>{$row['ID']}</td><td>{$row['CustomerName']}</td><td>{$row['PhoneNumber']}</td><td>{$row['Email']}</td><td>{$row['Gender']}</td></tr>";
             
-               
-                 
-               
-               
-                
-                
                 }
-            
-            
             
             $conn->close();
             ?>
+                    
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+            
+            
         </table>
 
 

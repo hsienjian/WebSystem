@@ -55,15 +55,29 @@ and open the template in the editor.
                             <th scope="col">Item Name</th>
                             <th scope="col">Date</th>
                             <th scope="col" >Address</th>
-                            <th scope="col" class="text-right">Status
-                            <th scope="col" class="text-right">Total(RM)
-                            <th scope="col" class="text-right">Action</th>
-                            <th> </th>
+                            <th scope="col" >Status
+                            <th scope="col" >Total(RM)
+                            <th scope="col" >Action</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                         
-                       
+                       <?php
+            $conn = new mysqli('localhost','root','','assignment');
+            $sql = "select * from adminorder";
+            $result = $conn ->query($sql);
+            while($row=$result->fetch_assoc()){
+                echo "<tr><td>{$row['orderID']}</td><td>{$row['CustomerID']}</td><td>{$row['ItemName']}</td><td>{$row['Date']}</td><td>{$row['Address']}</td><td>{$row['Status']}</td><td>{$row['Total']}</td><td class='text-right'><button type='button' class='btn btn-sm btn-danger'><i class='fa fa-trash'></i> </button> </td></tr>";
+                                 
+
+                }
+            
+            $conn->close();
+            ?>                            
+
+            
+            
                        
                         
                     </tbody>
@@ -71,25 +85,7 @@ and open the template in the editor.
             </div>
         </div>
                 
-            <?php
-            $conn = new mysqli('localhost','root','','assignment');
-            $sql = "select * from adminorder";
-            $result = $conn ->query($sql);
-            while($row=$result->fetch_assoc()){
-                echo "<tr><td>{$row['orderID']}</td><td>{$row['CustomerID']}</td><td>{$row['ItemName']}</td><td>{$row['Date']}</td><td>{$row['Address']}</td><td>{$row['Status']}</td><td>{$row['Total']}</td><td>{$row['Action']}</td></tr>";
             
-               
-                 
-               
-               
-                
-                
-                }
-            
-            
-            
-            $conn->close();
-            ?>
         </table>
 
 
