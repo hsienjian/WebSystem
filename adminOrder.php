@@ -68,7 +68,9 @@ and open the template in the editor.
             $sql = "select * from adminorder";
             $result = $conn ->query($sql);
             while($row=$result->fetch_assoc()){
-                echo "<tr><td>{$row['orderID']}</td><td>{$row['CustomerID']}</td><td>{$row['ItemName']}</td><td>{$row['Date']}</td><td>{$row['Address']}</td><td>{$row['Status']}</td><td>{$row['Total']}</td><td class='text-right'><button type='button' class='btn btn-sm btn-danger'><i class='fa fa-trash'></i> </button> </td></tr>";
+                echo "<tr><td>{$row['orderID']}</td><td>{$row['CustomerID']}</td><td>{$row['ItemName']}</td><td>{$row['Date']}</td><td>{$row['Address']}</td><td>{$row['Status']}</td><td>{$row['Total']}
+                </td><td class='text-right'><button type='button' class='btn btn-sm btn-danger'><i class='fa fa-trash'></i> </button> 
+                </td><td class='text-right'><button type='button' class='btn btn-sm btn-secondary'><i class='fas fa-edit'></i></button></td></tr>";
                                  
 
                 }

@@ -89,4 +89,4 @@ and open the template in the editor.
 </html>
 
 
-                <tr><th>Order ID</th><th>Customer ID</th><th>Item Name</th><th>Date</th><th>Address</th><th>Status</th><th>Total( RM )</th><th>Action</th></tr>
+                <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></button>
