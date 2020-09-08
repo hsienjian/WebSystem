@@ -1,5 +1,5 @@
 <?php
-include('server.php');
+
 include ('includes/header1.php');
 //include('includes/clientnav.php');
 ?>
@@ -43,7 +43,7 @@ and open the template in the editor.
             margin: 0px auto;
             padding:30px;
             border: 1px solid #B0C4DE;
-            background: white;
+            
             border-radius: 0px 0px 10px 10px;
             }
             
@@ -89,47 +89,79 @@ and open the template in the editor.
     
     
     <body>
+         <?php
+        include('includes/clientnav.php'); 
+    ?>
+        
+        <?php
+         $conn = new mysqli("localhost","root","","assignment");
+                
+        
+
+        if(isset($_POST['submit'])){
+            $username = ($_POST['username']);
+            $email =($_POST['email']);
+            $gender = ($_POST['gender']);
+            $password_1 = ($_POST['password_1']);
+            
+            $sql= "insert into userregister values('{}','{$username}','{$email}','{$gender}','{$password_1}')";
+            $result = $conn->query($sql);
+            
+            if($result){
+                $msg = "$username Successful register";
+            }else{
+                echo $conn->error;
+            }
+            
+        }
+        ?>
+        
         <div class="header">
             <h2>Register</h2>
             
         </div>
         
-        <form method="post" action="done.php" class="register" >
+        <form method="post"  class="register" >
             
                 <div class="imgcontainer">
                       
-                    <img src="img/myprinting.png" alt="myprinting" class="logo" width="400px" height="110px" >
+                    <img src="img/myprinting.png" alt="myprinting" class="logo" "width=400px" height=110px">
                 </div>
   
             <div class="input-group">
                 <label>Username</label>
-                <input type="text" placeholder="User Name" name="username" >
+                <input type="text" placeholder="User Name" name="username" required>
             </div>
             
             <div class="input-group">
                 <label>Email</label>
-                <input type="email" placeholder="Email" name="email">
+                <input type="text" placeholder="Email" name="email" required>
+            </div>
+            
+            <div class="input">
+                <label>Gender </label>
+                <input type="text"  name="gender" placeholder="Male | Female" required="">
+                
             </div>
             
             <div class="input-group">
                 <label>Password</label>
-                <input type="password" placeholder="Password" name="password_1">
+                <input type="password" placeholder="Password" name="password_1" required>
             </div>
             
-            <div class="input-group">
-                <label>Confirm Password</label>
-                <input type="password" placeholder="Confirm Password" name="password_2">
-            </div>
+            
             
             <div class="input-group">
-                <button type="submit" name="userregister" value="register" class="btn">Register</button>
+                <button type="submit" name="submit" value="register" class="btn">Register</button>
                 
             </div>
             
             <p>
-                Already a member? <a href="mainpage.php" action="">Sign in</a>
+                <span class="register">Already a member?<a href="#"  onclick="show5()" >Sign In</a> 
             </p>
         </form>
+        
+        <script src="js/displayForm.js"></script>
     </body>
     
 <?php

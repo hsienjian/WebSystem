@@ -10,8 +10,11 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        echo 'sucessful';
-        ?>
+    <?php
+        session_start();
+        unset($_SESSION["username"]);
+        unset($_SESSION["password"]);
+        header("Location:mainpage.php");
+    ?>
     </body>
 </html>

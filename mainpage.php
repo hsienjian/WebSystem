@@ -1,4 +1,7 @@
+<?php
+include("includes/ClientLogin.php");
 
+?>
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
@@ -111,41 +114,7 @@
 </div>
  
     
-<div class="background-brand">
-    <div class="header-custom">
-        <h1>Shop By Brand</h1>
-    </div>
-    
-    <div class="row" style="padding-left:30px;padding-top: 5px;justify-content: center;margin: auto;">
-              <div class="column" style="padding-left:50px; padding-bottom: 20px;">
-                  <a href="#" style="stylesheet"><img src="img/freelife.jpg" alt="freelife"></a>
-              </div>
-              <div class="column" style="padding-left:50px; padding-bottom: 20px;">
-                  <a href="#" style="stylesheet"><img src="img/Comfort_Colors.jpg" alt="Comfort_Colors"></a>
-              </div>
-              <div class="column" style="padding-left:50px; padding-bottom: 20px;">
-                  <a href="#" style="stylesheet"><img src="img/Rightway.jpg" alt="Rightway"></a>
-              </div>
-                <div class="column" style="padding-left:50px; padding-bottom: 20px;">
-                    <a href="#" style="stylesheet"><img src="img/oren.png" alt="oren"></a>
-              </div>
-        </div>
 
-        <div class="row" style="padding-left:30px;padding-top: 5px;justify-content: center;margin: auto;">
-              <div class="column" style="padding-left:50px; padding-bottom: 20px;">
-                  <a href="#" style="stylesheet"><img src="img/Body-Glove.jpg" alt="body glove"></a>
-              </div>
-              <div class="column" style="padding-left:50px; padding-bottom: 20px;">
-                  <a href="#" style="stylesheet"><img src="img/gildan.png" alt="Gildan"></a>
-              </div>
-              <div class="column" style="padding-left:50px; padding-bottom: 20px;">
-                  <a href="#" style="stylesheet"><img src="img/Apparel.jpg" alt="Apparel"></a>
-              </div>
-              <div class="column" style="padding-left:50px; padding-bottom: 20px;">
-                    <a href="#" style="stylesheet"><img src="img/palomo.png" alt="palomo"></a>
-              </div>
-        </div>
-</div>
     
 <div class="background">
 <div class="header-custom">
@@ -208,14 +177,35 @@
                             <h3>Embroidery Printing</h3>
                             <p>Embroidery is a process where thread is stitched into your custom product. Some of the more popular items that embroidery is used for are: golf shirts, jackets, hats and corporate wear.</p>
                        </div>
-    </div>                     
+    </div>      
+    
 </div>  
 
-
+    
   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
 
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    
+    function form(x){
+    if(x===0){
+         document.getElementByid('form1').style.display='block';
+    }
+   else{
+        document.getElementByid('form1').style.display='none';
+   }
+    return;
+}
+    </script>
 </body>
 </html> 
        

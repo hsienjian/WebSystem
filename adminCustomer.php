@@ -38,9 +38,11 @@ and open the template in the editor.
                         <tr>
                             <th scope="col">Customer ID</th>
                             <th scope="col">Customer Name</th>
-                            <th scope="col">Phone Number</th>
                             <th scope="col">Email</th>
+                            <th scope="col">Password</th>
                             <th scope="col">Gender</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Address</th>
                             <th scope="col" class="text-right">Action</th>
                             <th> </th>
                         </tr>
@@ -51,7 +53,38 @@ and open the template in the editor.
             $sql = "select * from customer";
             $result = $conn ->query($sql);
             while($row=$result->fetch_assoc()){
-                echo "<tr><td>{$row['ID']}</td><td>{$row['CustomerName']}</td><td>{$row['PhoneNumber']}</td><td>{$row['Email']}</td><td>{$row['Gender']}
+                echo "<tr><td>{$row['ID']}</td><td>{$row['CustomerName']}</td><td>{$row['Email']}</td><td>{$row['password']}</td><td>{$row['Gender']}</td><td>{$row['PhoneNumber']}</td><td>{$row['address']}
+                    </td><td class='text-right'><button type='button' class='btn btn-sm btn-danger'><i class='fa fa-trash'></i> </button> 
+                    </td><td class='text-right'><button type='button' class='btn btn-sm btn-secondary'><i class='fas fa-edit'></i></button></td></tr>";
+            
+                }
+            
+            $conn->close();
+            ?>
+                    
+                </table>
+                <h3>Guest</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Address</th>
+                            <th scope="col" class="text-right">Action</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    
+                    <?php
+            $conn = new mysqli('localhost','root','','assignment');
+            $sql = "select * from customer";
+            $result = $conn ->query($sql);
+            while($row=$result->fetch_assoc()){
+                echo "<tr><td>{$row['ID']}</td><td>{$row['CustomerName']}</td><td>{$row['Email']}</td><td>{$row['password']}</td><td>{$row['Gender']}</td><td>{$row['PhoneNumber']}</td><td>{$row['address']}
                     </td><td class='text-right'><button type='button' class='btn btn-sm btn-danger'><i class='fa fa-trash'></i> </button> 
                     </td><td class='text-right'><button type='button' class='btn btn-sm btn-secondary'><i class='fas fa-edit'></i></button></td></tr>";
             

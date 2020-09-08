@@ -57,6 +57,7 @@
                         <tr>
                             <th scope="col">Product img</th>
                             <th scope="col">Product</th>
+                            <th scope="col">Method</th>
                             <th scope="col">Size</th>
                             <th scope="col">Color</th>
                             <th scope="col" class="text-center">Quantity</th>
@@ -69,6 +70,10 @@
                         <tr>
                             <td><img style="width: 100px;height: 100px;" src="img/custom/52ECBE2E-7524-40F9-8032-589F5E16B653-400x400.jpeg" /> </td>
                             <td>Round Neck T-Shirt with customized A3 size printing</td>
+                            <td><select name="method"><option selected="" value="">Select One</option>
+                                    <option selected="" value="">Design By Your Self</option>
+                                    <option  value="">Design By My Printing</option>
+                            </td>
                             <td>M</td>
                             <td><div class="circle color1" style="background-color:black;"></div></td>
                             <td>
@@ -85,6 +90,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td>Sub-Total</td>
                             <td class="text-right">RM 15.00</td>
                             
@@ -95,10 +101,12 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td>Shipping</td>
                             <td class="text-right">RM 5.00</td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>

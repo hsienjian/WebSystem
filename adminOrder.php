@@ -55,6 +55,8 @@ and open the template in the editor.
                             <th scope="col">Item Name</th>
                             <th scope="col">Date</th>
                             <th scope="col" >Address</th>
+                            <th scope="col" >Contact</th>
+                            <th scope="col">Method</th>
                             <th scope="col" >Status
                             <th scope="col" >Total(RM)
                             <th scope="col" >Action</th>
@@ -68,9 +70,12 @@ and open the template in the editor.
             $sql = "select * from adminorder";
             $result = $conn ->query($sql);
             while($row=$result->fetch_assoc()){
-                echo "<tr><td>{$row['orderID']}</td><td>{$row['CustomerID']}</td><td>{$row['ItemName']}</td><td>{$row['Date']}</td><td>{$row['Address']}</td><td>{$row['Status']}</td><td>{$row['Total']}
+                echo "<tr><td>{$row['orderID']}</td><td>{$row['CustomerID']}</td><td>{$row['ItemName']}</td><td>{$row['Date']}</td><td>{$row['Address']}</td><td>{$row['contact']}</td><td>{$row['Method']}</td><td>{$row['Status']}</td><td>{$row['Total']}
                 </td><td class='text-right'><button type='button' class='btn btn-sm btn-danger'><i class='fa fa-trash'></i> </button> 
-                </td><td class='text-right'><button type='button' class='btn btn-sm btn-secondary'><i class='fas fa-edit'></i></button></td></tr>";
+                </td><td class='text-right'><button type='button' class='btn btn-sm btn-secondary'><i class='fas fa-edit'></i></button>
+                <button type='button' href='adminOrderList.php' class='btn btn-sm btn-info'><i class='fas fa-eye'></i></button></td>
+                </tr>";
+                //echo "<tr><td>";
                                  
 
                 }
@@ -78,7 +83,6 @@ and open the template in the editor.
             $conn->close();
             ?>                            
 
-            
             
                        
                         

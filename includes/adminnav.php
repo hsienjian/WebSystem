@@ -23,10 +23,10 @@
                             <i class="fas fa-user"></i><span id="space" style="padding-left: 5px;"></span><i class="fas fa-caret-down"></i>
                         </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="adminEditProfile.php">Edit Profile</a> <!-- no functioning (php) -->
-                                <a class="dropdown-item" href="adminChangePass.php">Change Password</a> <!-- no functioning (php) -->
+                                <a class="dropdown-item" href="adminEditProfile.php">Edit Profile</a> 
                                 
-                                <a class="dropdown-item" href="adminLogin.php">Logout</a> <!-- no functioning (php) -->
+                                
+                                <a class="dropdown-item" href="adminLogin.php">Logout</a> 
                             </div>
                         </li>
                     </ul>

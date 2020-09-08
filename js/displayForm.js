@@ -22,3 +22,7 @@ function show4(){
 function show5(){
     document.getElementById('id01').style.display = 'block';
 }
+
+function show6(){
+    document.getElementById('').style.display = 'block';
+}
